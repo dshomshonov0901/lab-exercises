@@ -3,27 +3,35 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <img src="https://www.beyondhorizons.biz/wp-content/uploads/2016/10/celebration.jpg">
+        <img class = images src="https://www.beyondhorizons.biz/wp-content/uploads/2016/10/celebration.jpg">
+        <link rel="stylesheet" type="text/css" href="birthday.css"/>
         <title>Happy Birthday</title>
-        <h1>Happy Birthday</h1>
+        <div>
+            <h1>Happy Birthday</h1>
+        </div>
     </head>
     <body>
 
-        <p>Dear <b>Brithday Person</b>. Happy Birthday. Have a great day!</p>
-        <p>Scroll through this list of events that happened on your birthday: </p>
-        <iframe src="https://www.onthisday.com/today/birthdays.php" width="100%" height = "300" style="border:none" title="On This Day"></iframe>
+        <p class=first> Dear <b>Brithday Person</b>. Happy Birthday. Have a great day!<br>Scroll through this list of events that happened on your birthday: </p>
+        <iframe class=window src="https://www.onthisday.com/today/birthdays.php" width="100%" height = "300"  title="On This Day"></iframe>
         <hr>
         <p>What would you like to be gifted on this special day? If you need help thinking of gifts see this <a href="https://mashable.com/deals/birthday-wish-list">birthday wish list.</a> </p>
         <br>
-        <div class="giftform">
-        <form id=form>
-            <label for="name">Gift:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <button type="submit" value="submit">
+        <hr id="break">
+        <br>
+        <form class="giftForm">
+                <label for="gift_one">Gift One </label>
+                <input type="text" name="gift_one" id="gift_one" required>
+              
+                <label for="gift_two">Gift Two </label>
+                <input type="text" name="gift_two" id="gift_two" required>
+              
+                <label for="gift_three">Gift Three </label>
+                <input type="text" name="gift_three" id="gift_three" required><br><br>
+                <button class="buttons" type="submit" value="submit">
                 Submit
-            </button>
+                </button>
           </form>
-        </div>
         <hr>
         </body>
 

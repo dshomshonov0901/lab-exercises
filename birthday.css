@@ -1,0 +1,85 @@
+
+*{ /*global*/
+
+    font-family: "Garamond", serif;
+    background-color: azure;
+}
+
+a{/*global*/
+ text-decoration:wavy;
+ color: orange
+}
+
+a:hover{
+    color:aquamarine
+}
+
+a:active{
+    color:blue
+}
+
+a:visited{
+    color:blueviolet
+}
+
+#break{/*local*/
+    border: 5px solid rgb(47, 141, 181);
+
+}
+.buttons{/*local*/
+
+    background-color: blue;
+    font-size: large;
+    color: aquamarine
+ }
+ label{/*global*/
+    color:aquamarine;
+    background-color:rgb(3, 41, 92)
+    
+ }
+ .giftForm {/*local*/
+    display: grid;
+    grid-template-columns: [labels] auto [controls] 1fr;  /*grid styling elements were not discussed in class. I found how to apply the style elements using w3 schools.*/
+    grid-auto-flow: row;
+    grid-gap: .9em .4em;  
+    background: rgb(78, 149, 242);
+    padding: 2em;
+    width: 30em;
+  }
+
+@keyframes birthday{
+    0%  {color:red;}
+    100% {color: aquamarine;}}
+
+h1{/*global*/
+    text-align: center;
+    animation-name: birthday;
+    animation-duration: 10s;
+}
+@keyframes image {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+.images{/*local*/
+    width: 1000px;
+    height: 500px;
+    position:relative;
+    animation-name: image;    /*animation styling elements were not discussed in class. I found how to apply the style elements using w3 schools.*/
+    animation-duration: 4s;
+}
+.first{/*local*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border:3px double rgb(78, 149, 242) 
+}
+    
+.window{/*local*/
+    border:3px solid rgb(3, 41, 92)
+}
+
+
+
+  
