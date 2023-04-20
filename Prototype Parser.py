@@ -12,8 +12,8 @@ from itertools import count
 from multiprocessing import Process
 import requests
 # Set up authorization credentials
-client_id = '4fdf0c9814f04bf2a858554336140450'
-client_secret = '5512f23f0a9048f28140e217c5db1b29'
+client_id = '07005604eeb94c15a4b055cb290847f8'
+client_secret = '24690934174c407583a9410363206c14'
 genius_access_token = "Bjc_l29KgRjxlf7pNJ-vM7zEDKG5xbf12fJ4K1TDZdWKW2jjh87Jqy7wz38ocUCu"
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
