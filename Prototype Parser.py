@@ -7,10 +7,7 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import lyricsgenius
-import time
-from itertools import count
-from multiprocessing import Process
-import requests
+
 # Set up authorization credentials
 client_id = '07005604eeb94c15a4b055cb290847f8'
 client_secret = '24690934174c407583a9410363206c14'
